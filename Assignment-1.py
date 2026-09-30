@@ -216,3 +216,26 @@ for i in range(1, len(arr)):
 
 # print(arr[:unique])
 print(unique)
+
+
+# Rotate array by K positions.
+
+def rotate_array(arr):
+    start = 0
+    end = len(arr) - 1
+
+    while start < end:
+        arr[start], arr[end] = arr[end], arr[start]
+        start +=1
+        end -=1
+    return arr
+arr = [43,67,25,68,35,78,35,57,46]
+print(rotate_array(arr))
+          
+
+
+        
+
+
+
+
